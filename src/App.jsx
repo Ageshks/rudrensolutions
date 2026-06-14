@@ -19,7 +19,8 @@ function ScrollToTop() {
 
 export default function App() {
   return (
-<HashRouter>     <ScrollToTop />
+    <BrowserRouter>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -34,6 +35,6 @@ export default function App() {
       </Routes>
       <Footer />
       <FloatingButtons />
-     </HashRouter> 
+    </BrowserRouter>
   );
 }
